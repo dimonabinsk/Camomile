@@ -5,7 +5,7 @@
         </a>
     
 <nav class="main-header__nav main-navigation">
-    <ul class="main-navigation__links">
+    <ul class="main-navigation__links ul-reset">
         <li class="main-navigation__link">
             <a href="#">Plants</a>
         </li>
@@ -19,7 +19,7 @@
             <a href="#">Blog</a>
         </li>
     </ul>
-    <ul class="main-navigation__user">
+    <ul class="main-navigation__user ul-reset">
         <li class="main-navigation__user_item">
             {% include 'parts/svgo/ico-search.svg' %}
         </li>
@@ -31,9 +31,10 @@
         <li class="main-navigation__user_item">
             <a href="#">
                 {% include 'parts/svgo/ico-shopping-bag.svg' %}
-                <p>0</p>
             </a>
-            
+        </li>
+        <li class="main-navigation__user_item">
+            0
         </li>
     </ul>
     
