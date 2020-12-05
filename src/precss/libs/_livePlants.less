@@ -1,11 +1,9 @@
 .live {
-    position: relative;
     .size(6);
-    // .col(6);
+    position: relative;
     height: 524px;
-    // background-image: url(/img/img-Live\ Plants.webp);
-    margin-left: @offset / 2;
-    margin-right: @offset / 2;
+    // margin-left: @offset / 2;
+    // margin-right: @offset / 2;
 
     &__plants {
         position: absolute;
@@ -69,4 +67,8 @@
     &__pots + &__care {
         margin-top: 15px;
     }
+}
+
+.live + .live {
+    margin-left: 20px;
 }
