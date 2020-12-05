@@ -1,43 +1,40 @@
 <header class="main-header">
-    <div class="wrapper main-header__wrap" >
+  <div class="wrapper main-header__wrap">
         <a href="#" class="main-header__link">
-            <img src="img/Camomile.png" alt="Company logo" class="main-header__logo">
+        <img
+            src="img/Camomile.png"
+            alt="Company logo"
+            class="main-header__logo"
+        />
         </a>
-    
-<nav class="main-header__nav main-navigation">
-    <ul class="main-navigation__links ul-reset">
-        <li class="main-navigation__link">
+
+        <nav class="main-header__nav main-navigation">
+        <ul class="main-navigation__links ul-reset">
+            <li class="main-navigation__link">
             <a href="#">Plants</a>
-        </li>
-        <li class="main-navigation__link">
+            </li>
+            <li class="main-navigation__link">
             <a href="#">Accessories</a>
-        </li>
-        <li class="main-navigation__link">
+            </li>
+            <li class="main-navigation__link">
             <a href="#">Plant Care</a>
-        </li>
-        <li class="main-navigation__link">
+            </li>
+            <li class="main-navigation__link">
             <a href="#">Blog</a>
-        </li>
-    </ul>
-    <ul class="main-navigation__user ul-reset">
-        <li class="main-navigation__user_item">
-            {% include 'parts/svgo/ico-search.svg' %}
-        </li>
-        <li class="main-navigation__user_item">
-            <a href="#">
-                {% include 'parts/svgo/ico-user.svg' %}
-            </a>
-        </li>
-        <li class="main-navigation__user_item">
-            <a href="#">
-                {% include 'parts/svgo/ico-shopping-bag.svg' %}
-            </a>
-        </li>
-        <li class="main-navigation__user_item">
-            0
-        </li>
-    </ul>
-    
-</nav>
-</div>
+            </li>
+        </ul>
+        <ul class="main-navigation__user ul-reset">
+            <li class="main-navigation__user_item">
+            <a href="#">{% include 'parts/svgo/ico-search.svg' %}</a>
+            </li>
+            <li class="main-navigation__user_item">
+            <a href="#"> {% include 'parts/svgo/ico-user.svg' %} </a>
+            </li>
+            <li class="main-navigation__user_item">
+            <a href="#"> {% include 'parts/svgo/ico-shopping-bag.svg' %} </a>
+            </li>
+            <li class="main-navigation__user_quantity">0</li>
+        </ul>
+        </nav>
+  </div>
 </header>

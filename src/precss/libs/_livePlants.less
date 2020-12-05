@@ -1,0 +1,72 @@
+.live {
+    position: relative;
+    .size(6);
+    // .col(6);
+    height: 524px;
+    // background-image: url(/img/img-Live\ Plants.webp);
+    margin-left: @offset / 2;
+    margin-right: @offset / 2;
+
+    &__plants {
+        position: absolute;
+        left: 60px;
+        top: 80px;
+        font-family: 'futura_md_btmedium';
+        font-weight: normal;
+        font-size: 64px;
+        color: #000;
+    }
+
+    &__arrOne {
+        position: absolute;
+        left: 385px;
+        top: 118px;
+    }
+
+    &__pots {
+        margin: 0;
+        position: relative;
+
+        &_acces {
+            width: 218px;
+            position: absolute;
+            left: 32px;
+            top: 52px;
+            font-family: 'futura_md_btmedium';
+            font-weight: normal;
+            font-size: 42px;
+            color: #000;
+        }
+
+        &_arrTwo {
+            position: absolute;
+            left: 270px;
+            top: 123px;
+        }
+    }
+
+    &__care {
+        margin: 0;
+        position: relative;
+
+        &_plant {
+            position: absolute;
+            left: 295px;
+            top: 95px;
+            font-family: 'futura_md_btmedium';
+            font-weight: normal;
+            font-size: 42px;
+            color: #000;
+        }
+
+        &_arrThree {
+            position: absolute;
+            left: 505px;
+            top: 115px;
+        }
+    }
+
+    &__pots + &__care {
+        margin-top: 15px;
+    }
+}

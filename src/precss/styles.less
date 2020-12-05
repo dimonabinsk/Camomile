@@ -2,13 +2,65 @@
 @import 'libs/vars.less';
 @import 'libs/mixins.less';
 @import 'libs/_header.less';
-@import 'libs/banner.less';
+@import 'libs/_banner.less';
+@import 'libs/_livePlants';
 
+@font-face {
+    font-family: 'futura_md_btmedium';
+    src: url('../fonts/futuram-webfont.woff2') format('woff2'),
+         url('../fonts/futuram-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_bk_btbook';
+    src: url('../fonts/futuran-webfont.woff2') format('woff2'),
+         url('../fonts/futuran-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'milkshakeregular';
+    src: url('../fonts/milkshake-webfont.woff2') format('woff2'),
+         url('../fonts/milkshake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratthin_italic';
+    src: url('../fonts/montserrat-thinitalic-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /* Set defaults */
 
 html,
 body{
 	box-sizing: border-box;
+	background-color: @fon;
 }
 
 *,
@@ -18,7 +70,7 @@ body{
 }
 
 body{
-	font-family: 'Futura Md BT','Milkshake', 'Montserrat', 'Open Sans', 'Arial', sans-serif;
+	font-family: 'futura_bk_btbook', 'Montserrat', 'Open Sans', 'Arial', sans-serif;
 	max-width: 1920px;
 	margin: 0 auto;
 	font-size: 16px;
