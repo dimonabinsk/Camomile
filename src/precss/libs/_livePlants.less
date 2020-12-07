@@ -2,16 +2,16 @@
     .size(6);
     position: relative;
     height: 524px;
-    
-    // margin-left: @offset / 2;
-    // margin-right: @offset / 2;
+
     & img {
         transition-duration: 0.3s;
     }
+
     & img:hover,
     & img:active,
     & img:focus {
         opacity: 0.3;
+
     }
 
     &__plants {
@@ -23,9 +23,7 @@
         font-size: 64px;
         color: #000;
 
-        // &:hover {
-        //     color: @hover;
-        // }
+
     }
 
     &__arrOne {
@@ -48,12 +46,6 @@
             font-size: 42px;
             color: #000;
         }
-        // &_acces:hover,
-        // &_acces:focus
-        // &_acces:active {
-        //     color: @hover;
-        // }
-
 
         &_arrTwo {
             position: absolute;
@@ -83,11 +75,13 @@
         }
     }
 
-    &__pots + &__care {
+    &__pots+&__care {
         margin-top: 15px;
     }
+
+
 }
 
-.live + .live {
+.live+.live {
     margin-left: 20px;
 }
