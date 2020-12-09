@@ -10,71 +10,77 @@
 @import 'libs/_foot.less';
 
 @font-face {
-    font-family: 'futura_md_btmedium';
-    src: url('../fonts/futuram-webfont.woff2') format('woff2'),
-         url('../fonts/futuram-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'futura_md_btmedium';
+	src: url('../fonts/futuram-webfont.woff2') format('woff2'),
+		url('../fonts/futuram-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'futura_bk_btbook';
-    src: url('../fonts/futuran-webfont.woff2') format('woff2'),
-         url('../fonts/futuran-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'futura_bk_btbook';
+	src: url('../fonts/futuran-webfont.woff2') format('woff2'),
+		url('../fonts/futuran-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'milkshakeregular';
-    src: url('../fonts/milkshake-webfont.woff2') format('woff2'),
-         url('../fonts/milkshake-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'milkshakeregular';
+	src: url('../fonts/milkshake-webfont.woff2') format('woff2'),
+		url('../fonts/milkshake-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'montserratthin_italic';
-    src: url('../fonts/montserrat-thinitalic-webfont.woff2') format('woff2'),
-         url('../fonts/montserrat-thinitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'robotolight_italic';
-    src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'montserratthin_italic';
+	src: url('../fonts/montserrat-thinitalic-webfont.woff2') format('woff2'),
+		url('../fonts/montserrat-thinitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'robotomedium';
-    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'robotolight_italic';
+	src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+		url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
+
+@font-face {
+	font-family: 'robotomedium';
+	src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+		url('../fonts/roboto-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
 /* Set defaults */
 
 html,
-body{
+body {
 	box-sizing: border-box;
-	background-color: @fon;
-	background-image: url('../img/water 1.jpg');
+	// background-color: @fon;
+	// background-image: url('../img/water 1.jpg');
+	background: rgb(118, 118, 122);
+	background: -moz-radial-gradient(circle, rgba(118, 118, 122, 1) 0%, rgba(9, 145, 72, 0.6954131994594712) 0%, rgba(56, 194, 180, 0.6253851882549895) 100%);
+	background: -webkit-radial-gradient(circle, rgba(118, 118, 122, 1) 0%, rgba(9, 145, 72, 0.6954131994594712) 0%, rgba(56, 194, 180, 0.6253851882549895) 100%);
+	background: radial-gradient(circle, rgba(118, 118, 122, 1) 0%, rgba(9, 145, 72, 0.6954131994594712) 0%, rgba(56, 194, 180, 0.6253851882549895) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#76767a", endColorstr="#38c2b4", GradientType=1);
 }
 
 *,
 *:before,
-*:after{
+*:after {
 	box-sizing: inherit;
 }
 
-body{
+body {
 	font-family: 'futura_bk_btbook', 'Montserrat', 'Open Sans', 'Arial', sans-serif;
 	max-width: 1920px;
 	margin: 0 auto;
@@ -83,106 +89,107 @@ body{
 	line-height: 1.2;
 }
 
-.btn-reset{
+.btn-reset {
 	appearance: none;
-  	border-radius: 0;
-  	opacity: 1;
+	border-radius: 0;
+	opacity: 1;
 	border: none;
 	background-color: transparent;
 	font: inherit;
 	cursor: pointer;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 10px;
 	height: 5px;
 	background-color: #eee;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
 	border-radius: 2px;
 	background-color: @scrollColor;
 }
 
-.ul-reset{
+.ul-reset {
 	list-style: none;
 }
 
-.input{
+.input {
 	font: inherit;
 	appearance: none;
 	opacity: 1;
 	transition: @transT;
-	&:focus{
+
+	&:focus {
 		outline: none;
-		box-shadow: 1px 1px 30px 1px rgba(60,86,166, 0.3);
+		box-shadow: 1px 1px 30px 1px rgba(60, 86, 166, 0.3);
 	}
 }
 
 img,
-video{
+video {
 	max-width: 100%;
 	height: auto;
 }
 
-a{
+a {
 	text-decoration: none;
-	color:black;
+	color: black;
 
-	&:hover{
-		color:@hover;
+	&:hover {
+		color: @hover;
 	}
 }
 
 /* Atomic */
 
-.d-n{
+.d-n {
 	display: none;
 }
 
-.d-b{
+.d-b {
 	display: block;
 }
 
-.d-f{
+.d-f {
 	display: flex;
 }
 
-.ttu{
+.ttu {
 	text-transform: uppercase;
 }
 
-.ta-c{
+.ta-c {
 	text-align: center;
 }
 
-.ov-h{
+.ov-h {
 	overflow: hidden;
 }
 
-.ov-s{
+.ov-s {
 	overflow: scroll;
 }
 
-.black{
+.black {
 	color: #000;
 }
 
 /* Global */
 
-.wrapper{
+.wrapper {
 	.wrapper();
 }
 
-.row{
+.row {
 	.row-flex();
 }
 
-.col{
+.col {
 	.col();
 }
 
-.sr-only{
+.sr-only {
 	position: absolute;
 	width: 1px;
 	height: 1px;

@@ -5,7 +5,11 @@
 .banner-door {
     display: flex;
     margin: 0;
-    
+    &__plant {
+        &_img {
+            border-radius: 10px;
+        }
+    }
 
     &__door {
         margin: 0;
@@ -47,6 +51,7 @@
     &__btn {
         background-color: @fon;
         border: 2px solid @default;
+        border-radius: 5px;
         box-sizing: border-box;
         font-family: 'futura_md_btmedium';
         font-weight: normal;
