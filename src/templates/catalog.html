@@ -1,9 +1,31 @@
-{% set title="Catalog" %}
-{% set lang="en" %}
-
-
-{% include 'parts/_head.html' %}
-
+{% set title="Catalog" %} {% set lang="en" %} {% include 'parts/_head.html' %}
 {% include 'parts/_header.html' %}
+
+<section class="catalog wrapper">
+  <h2 class="catalog__h2">Live Plants</h2>
+  <div class="catalog__option option">
+    <select class="option__items" >
+      <option class="option__items_item" value="">Sort options</option>
+      <option class="option__items_item" value="">Most Popular</option>
+      <option class="option__items_item" value="">Newest First</option>
+      <option class="option__items_item" value="">$ Low to High</option>
+      <option class="option__items_item" value="">$ High to Low</option>
+      <option class="option__items_item" value="">A-Z</option>
+      <option class="option__items_item" value="">Z-A</option>
+    </select>
+    <div class="">
+      {% include 'parts/svgo/ico-arrow-down.svg' %}
+      
+    </div>
+    <div class="">
+      {% include 'parts/svgo/ico-arrow-up.svg' %}
+    </div>
+  </div>
+</section>
+
+{% include 'parts/_catalogMenu.html'%}
+
+<div class="line"></div>
+
 
 {% include 'parts/_foot.html' %}

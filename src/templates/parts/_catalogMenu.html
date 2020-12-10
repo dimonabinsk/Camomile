@@ -1,0 +1,37 @@
+<div class="line"></div>
+
+<section class="menu-filter wrapper">
+<div class="filter">
+    <h3 class="filter__h3">Filter by</h3>
+    <div class="filter__select">
+       <p>
+        <input type="hidden" id="features">
+        <label for="features">Features</label>
+       </p> 
+       <div class="">
+           {% include 'parts/svgo/ico-arrow-down.svg' %}
+       </div>
+    </div>
+    
+    <div class="filter__select">
+        <p>
+            <input type="hidden" id="variety">
+            <label for="variety">Variety</label>
+           </p> 
+           <div class="">
+               {% include 'parts/svgo/ico-arrow-down.svg' %}
+           </div>
+    </div>
+
+    <div class="filter__select">
+        <p>
+            <input type="hidden" id="size">
+            <label for="size">Size</label>
+           </p> 
+           <div class="">
+               {% include 'parts/svgo/ico-arrow-down.svg' %}
+           </div>
+    </div>
+</div>
+<div class="clear">Clear All Filters</div>
+</section>

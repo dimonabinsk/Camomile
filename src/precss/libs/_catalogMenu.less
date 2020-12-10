@@ -1,0 +1,26 @@
+.menu-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    & .filter {
+        display: flex;
+        align-items: baseline;
+
+       h3 + div {
+            margin-left: 48px;
+        }
+        div + div {
+            margin-left: 48px;
+        }
+
+        &__select {
+            display: flex;
+            align-items: baseline;
+
+            & p {
+                margin-right: 10px;
+            }
+        }
+    }
+}
