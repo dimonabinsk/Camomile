@@ -1,4 +1,4 @@
-.menu-filter {
+.filter-menu {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -6,21 +6,47 @@
     & .filter {
         display: flex;
         align-items: baseline;
-
-       h3 + div {
-            margin-left: 48px;
-        }
-        div + div {
-            margin-left: 48px;
-        }
+        padding-left: 0;
+        margin: 22px 0;
+        list-style: none;
 
         &__select {
-            display: flex;
-            align-items: baseline;
+            &_block {
+                position: relative;
+                display: inline-block;
 
-            & p {
-                margin-right: 10px;
+            }
+
+            &::before {
+                content: "";
+                display: none;
+                position: absolute;
+                top: 7px;
+                background-image: url('/img/icons/ico-arrow-up.svg');
+                width: 11px;
+                height: 5px;
+
             }
         }
     }
+
+    li+li {
+        margin-left: 48px;
+
+    }
+}
+
+.window-menu {
+    padding-top: 35px;
+    padding-bottom: 150px;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    display: none;
+    
+
+    div+div {
+        padding-left: 85px;
+    }
+    
 }

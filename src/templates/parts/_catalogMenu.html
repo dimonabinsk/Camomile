@@ -1,37 +1,82 @@
 <div class="line"></div>
 
 <section class="menu-filter wrapper">
-<div class="filter">
-    <h3 class="filter__h3">Filter by</h3>
-    <div class="filter__select">
-       <p>
-        <input type="hidden" id="features">
-        <label for="features">Features</label>
-       </p> 
-       <div class="">
-           {% include 'parts/svgo/ico-arrow-down.svg' %}
-       </div>
+  <div class="filter-menu">
+    <ul class="filter">
+      <li class="filter__text">Filter by</li>
+      <li class="filter__select">
+        <a href="#" class="filter__select_link">Features</a>
+        <div class="filter__select_block">
+          {% include 'parts/svgo/ico-arrow-down.svg' %}
+        </div>
+      </li>
+
+      <li class="filter__select">
+        <a href="#" class="filter__select_link">Variety</a>
+        <div class="filter__select_block">
+          {% include 'parts/svgo/ico-arrow-down.svg' %}
+        </div>
+      </li>
+
+      <li class="filter__select">
+        <a href="#" class="filter__select_link">Size</a>
+        <div class="filter__select_block">
+          {% include 'parts/svgo/ico-arrow-down.svg' %}
+        </div>
+      </li>
+    </ul>
+
+    <div class="clear">
+      <a href="#">Clear All Filters</a>
     </div>
-    
-    <div class="filter__select">
-        <p>
-            <input type="hidden" id="variety">
-            <label for="variety">Variety</label>
-           </p> 
-           <div class="">
-               {% include 'parts/svgo/ico-arrow-down.svg' %}
-           </div>
+  </div>
+
+  <div class="window-menu">
+    <div class="window-menu__style">
+      <h4>STYLE</h4>
+      <p>
+        <input type="checkbox" id="bloom" name="bloom" value="bloom" />
+        <label for="bloom"> Blooming </label>
+      </p>
+      <p>
+        <input type="checkbox" id="patter" name="patter" value="patter" />
+        <label for="patter"> Patterned </label>
+      </p>
+      <p>
+        <input type="checkbox" id="trending" name="trending" value="trending" />
+        <label for="trending"> Trending </label>
+      </p>
+      <p>
+        <input type="checkbox" id="cascad" name="cascad" value="cascad" />
+        <label for="cascad"> Cascading </label>
+      </p>
     </div>
 
-    <div class="filter__select">
-        <p>
-            <input type="hidden" id="size">
-            <label for="size">Size</label>
-           </p> 
-           <div class="">
-               {% include 'parts/svgo/ico-arrow-down.svg' %}
-           </div>
+    <div class="window-menu__light">
+      <h4>LIGHT</h4>
+      <p>
+        <input type="checkbox" id="low" />
+        <label for="low"> Low light </label>
+      </p>
+      <p>
+        <input type="checkbox" id="brightr" />
+        <label for="brightr"> Bright light </label>
+      </p>
     </div>
-</div>
-<div class="clear">Clear All Filters</div>
+   
+    <div class="window-menu__benefit">
+        <h4>BENEFIT</h4>
+        <p>
+          <input type="checkbox" id="pet" />
+          <label for="pet"> Pet Friendly
+              
+               </label>
+        </p>
+        <p>
+          <input type="checkbox" id="air" />
+          <label for="air"> Air Purifying </label>
+        </p>
+    </div>
+    </div>
+  </div>
 </section>
