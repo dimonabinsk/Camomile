@@ -1,8 +1,103 @@
-.catalog-slide__items {
-    .size(3);
-    .col(3);
-    
-    & img {
-        width: 100%;
+.catalog-slide {
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    position: relative;
+
+    & .row {
+
+        & .catalog-slide__items {
+            .col();
+            .size(3);
+            padding-bottom: 60px;
+
+            &_img {
+                border-radius: 10px;
+            }
+
+            &_text,
+            &_price {
+                text-align: center;
+                margin-top: 24px;
+                font-family: 'futura_bk_btbook';
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            &_price {
+               margin-top: 14px; 
+            }
+        }
     }
+    &__blog-nav{
+        position: relative;
+        width: 210px;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        &_count{
+            background-color: @fon;
+            border: 0;
+            font-family: 'futura_md_btmedium';
+            font-weight: 400;
+            font-size: 16px;
+            outline: none;
+            cursor: pointer;
+        }
+       
+    }
+    
+    &__btn-prev,
+    &__btn-next{
+        position: relative;
+        outline: none;
+        top: -72px;
+        border:0;
+        background-color: @fon;
+        font-family: 'futura_md_btmedium';
+        font-weight: 400;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    &__btn-prev{
+        left: 425px;
+        // .media-max(480px,{
+        //     left: 33vw; 
+        // });
+        // .media-max(400px,{
+        //     left: 30vw; 
+        // });
+    }
+    
+    &__btn-next{
+        left: 650px;
+        // .media-max(780px,{
+        //     left: 55vw; 
+        // });
+        // .media-max(600px,{
+        //     left: 53vw; 
+        // });
+        // .media-max(480px,{
+        //     left: 52vw; 
+        // });
+        // .media-max(400px,{
+        //     left: 52vw; 
+        // });
+    }
+    
+    // .slick-current{
+    //     .catalog-slide__blog-nav_count{
+    //         color:#5b815d;
+    //         font-weight: @fontSemiBold;
+    //     }
+    // }
+    
 }
+
+
+
