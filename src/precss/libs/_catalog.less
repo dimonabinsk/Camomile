@@ -3,30 +3,52 @@
     justify-content: space-between;
     align-items: baseline;
 
-    &__h2{
+    &__h2 {
         font-family: 'futura_md_btmedium';
         font-size: 64px;
         font-weight: 400;
     }
 
     & .option {
+        
         &__items {
             font-family: 'futura_bk_btbook';
-                font-size: 18px;
-                font-weight: 400;
-                // padding: 28px 36px;
-                
-                // appearance: none;
-                border: none;
-                background-color: rgba(0, 0, 0, 0);
-                // background-image: url(../src/templates/parts/svgo/ico-arrow-down.svg);
+            font-size: 18px;
+            font-weight: 400;
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: none;
+            background-color: @fon;
+            width: 140px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 2px @line;
+            padding: 0 5px;            
+
             &_item {
                 font-family: 'futura_bk_btbook';
                 font-size: 18px;
                 font-weight: 400;
-                
+                padding: 5px 0;
+                margin: 0 10px;
             }
-            
+
+           
+
+        }
+
+        &__arrow-down {
+            position: relative;
+            left: 120px;
+            top: -18px;
+        }
+
+        &__arrow-up {
+            position: relative;
+            left: 120px;
+            top: -36px;
+            display: none;
         }
     }
 }
