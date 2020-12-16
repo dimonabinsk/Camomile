@@ -87,3 +87,24 @@ wow.init();
     ]
     
   });
+
+  $(".anthurium-slider__img_flower").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: ".anthurium-slider__dots_btn",
+    nextArrow: ".anthurium-slider__btn-next",
+    prevArrow: ".anthurium-slider__btn-prev",
+    fade: true,
+    infinite: true,
+    asNavFor: ".anthurium-slider__dots_btn"
+  });
+
+  $(".anthurium-slider__dots_btn").slick({
+    slidesToShow: 4,
+    slidesToScroll: false,
+    asNavFor: ".anthurium-slider__img_flower",
+    infinite: true,
+    focusOnSelect: true,
+    dots: false,
+    arrows: false,
+  });
