@@ -1,52 +1,8 @@
-{% set title="Product" %}
-{% set lang="en" %}
-
-{% include 'parts/_head.html' %}
-
+{% set title="Product" %} {% set lang="en" %} {% include 'parts/_head.html' %}
 {% include 'parts/_header.html' %}
 
-<section class="anthurium wrapper">
-
-    <div class="anthurium-slader">
-        <div class="anthurium-slader__img">
-            <img src="img/img-slider-1.webp" alt="Indoor flower" class="anthurium-slider__img_flower">
-            <img src="img/img-slider-1.webp" alt="Indoor flower" class="anthurium-slider__img_flower">
-            <img src="img/img-slider-1.webp" alt="Indoor flower" class="anthurium-slider__img_flower">
-            <img src="img/img-slider-1.webp" alt="Indoor flower" class="anthurium-slider__img_flower">
-        </div>
-        
-        <div class="anthurium-slider__dots">
-
-            <button class="anthurium-slider__dots_btn dots">
-                <div class="dots__btn"></div>
-            </button>
-            <button class="anthurium-slider__dots_btn dots">
-                <div class="dots__btn"></div>
-            </button>
-            <button class="anthurium-slider__dots_btn dots">
-                <div class="dots__btn"></div>
-            </button>
-            <button class="anthurium-slider__dots_btn dots">
-                <div class="dots__btn"></div>
-            </button>
-        
-        </div>
-
-        <button class="anthurium-slider__btn-prev">
-            {% include 'parts/svgo/arrow-left.svg' %}
-        </button>
-        <button class="anthurium-slider__btn-next">
-            {% include 'parts/svgo/arrow-right.svg' %}
-        </button>
-    </div>
-
-    
+{% include 'parts/_productSlider.html' %}
 
 
-    
-
-    <div class="anthurium-cart"></div>
-
-</section>
 
 {% include 'parts/_foot.html' %}

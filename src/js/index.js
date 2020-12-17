@@ -88,7 +88,7 @@ wow.init();
     
   });
 
-  $(".anthurium-slider__img_flower").slick({
+  $(".anthurium-slader__img").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: ".anthurium-slider__dots_btn",
@@ -96,15 +96,15 @@ wow.init();
     prevArrow: ".anthurium-slider__btn-prev",
     fade: true,
     infinite: true,
-    asNavFor: ".anthurium-slider__dots_btn"
+    asNavFor: ".anthurium-slider__dots"
   });
 
-  $(".anthurium-slider__dots_btn").slick({
+  $(".anthurium-slider__dots").slick({
     slidesToShow: 4,
-    slidesToScroll: false,
-    asNavFor: ".anthurium-slider__img_flower",
+    slidesToScroll: 1,
+    asNavFor: ".anthurium-slader",
     infinite: true,
     focusOnSelect: true,
     dots: false,
-    arrows: false,
+    arrows: false
   });
