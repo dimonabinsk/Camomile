@@ -88,7 +88,7 @@ wow.init();
     
   });
 
-  $(".anthurium-slader__img").slick({
+  $(".anthurium-slider__img").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: ".anthurium-slider__dots_btn",
@@ -102,7 +102,7 @@ wow.init();
   $(".anthurium-slider__dots").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    asNavFor: ".anthurium-slader",
+    asNavFor: ".anthurium-slider__img",
     infinite: true,
     focusOnSelect: true,
     dots: false,

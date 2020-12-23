@@ -1,13 +1,43 @@
 .anthurium {
     padding-top: 48px;
- .anthurium-slader{
-     .size(6);
-     .col();
- }
+    
+    .row {
+        .anthurium-slider {
+            .size(6);
+            .col();
+            &__dots {
+                margin-left: auto;
+                margin-right: auto;
+                width: 100px;
 
- .anthurium-cart {
-     .size(6);
-     .col();
- }
+                &_btn {
+                    background-color: #c4c4c4;
+                    border: 0;
+                    outline: none;
+                    height: 2px;
+                    width: 14px;
+                    border-radius: 2px;
+                }
+
+                
+            }
+            
+        }
+       
+        .anthurium-cart {
+            .size(6);
+            .col();
+        }
+    }
   
+}
+
+.slick-current {
+    .anthurium-slider__dots_cont {
+        
+        .anthurium-slider__dots_btn {
+            background-color: #4e7440;
+        }
+    }
+    
 }
