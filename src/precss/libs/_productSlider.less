@@ -1,10 +1,17 @@
 .anthurium {
     padding-top: 48px;
     
+
     .row {
         .anthurium-slider {
             .size(6);
             .col();
+            &__img {
+                &_flower{
+                    border-radius: 20px;
+                }
+            }
+
             &__dots {
                 margin-left: auto;
                 margin-right: auto;
@@ -19,25 +26,127 @@
                     border-radius: 2px;
                 }
 
-                
+
             }
-            
+
+            &__btn {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                
+                bottom: 50%;
+                
+                &-prev,
+                &-next {
+                    background-color: Transparent;
+                    background-repeat: no-repeat;
+                    border: none;
+                    cursor: pointer;
+                    overflow: hidden;
+                    outline: none;
+                }
+
+               
+            }
+
+
+
         }
-       
+
         .anthurium-cart {
             .size(6);
             .col();
+            margin-top: 50px;
+            padding-left: 20px;
+
+            &__h {
+                font-family: 'futura_md_btmedium';
+                font-size: 48px;
+                font-weight: 400;
+                margin: 12px 0 0 0;
+            }
+
+            &__text {
+                font-family: 'futura_bk_btbook';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                margin: 0 0 24px 0;
+            }
+
+            &__price {
+                font-family: 'futura_md_btmedium';
+                font-size: 24px;
+                font-weight: 400;
+                color: @scrollColor;
+            }
+
+            &__height {
+                font-family: 'futura_md_btmedium';
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 24px;
+                margin-bottom: 8px;
+            }
+
+            &__height-btn {
+                margin-bottom: 50px;
+                button + button {
+                    margin-left: 12px;
+                }
+                &_btn {
+                    background-color: #f7f7f7;
+                    border: none;
+                    border-radius: 5px;
+                    transition: @transT;
+                    font-family: 'futura_md_btmedium';
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 10px 24px;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                &_btn:hover,
+                &_btn:active,
+                &_btn:focus {
+                    box-shadow: 4px 4px 2px @line;
+                    color: @hover;
+                }
+            }
+
+            &__btn {
+                background-color: @default;
+                border: none;
+                border-radius: 5px;
+                transition: @transT;
+                font-family: 'futura_md_btmedium';
+                font-size: 16px;
+                font-weight: 400;
+                color: #000;
+                padding: 12px 32px;
+                outline: none;
+                cursor: pointer;
+            }
+
+            &__btn:hover,
+            &__btn:active,
+            &__btn:focus {
+                box-shadow: 4px 4px 2px @line;
+                color: #fff;
+            }
         }
     }
-  
+
 }
 
 .slick-current {
     .anthurium-slider__dots_cont {
-        
+
         .anthurium-slider__dots_btn {
             background-color: #4e7440;
         }
     }
-    
+
 }
