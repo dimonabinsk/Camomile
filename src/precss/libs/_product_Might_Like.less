@@ -1,0 +1,42 @@
+.mightLike {
+    margin: 0;
+    padding: 0;
+    padding-top: 160px;
+    padding-bottom: 80px;
+    &__h {
+        font-family: 'futura_md_btmedium';
+        font-size: 64px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    &__items {
+        .col();
+        .size(3);
+
+        &_img {
+            border-radius: 10px;
+            transition: @transT;
+        }
+
+        &_img:focus,
+        &_img:hover {
+            opacity: 0.7;
+        }
+        &_text,
+        &_price {
+            margin: 0;
+            padding: 0;
+            margin-top: 24px;
+            text-align: center;
+            font-family: 'futura_bk_btbook';
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &_price {
+            margin-top: 14px;
+        }
+    }
+}
